@@ -1,0 +1,104 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            opacity: 0; /* Start with the body invisible */
+            transition: opacity 1s ease-in-out; /* Transition for body fade-in */
+        }
+        body.loaded {
+            opacity: 1; /* Fade-in effect */
+        }
+        .form-container {
+            background-color: #f6ca8cbc;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            transform: scale(0.9); /* Start slightly scaled down */
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transitions */
+        }
+        .form-container.visible {
+            opacity: 1; /* Fade-in effect for the container */
+            transform: scale(1); /* Scale-up to normal size */
+        }
+        .form-group {
+            position: relative;
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            padding-left: 40px; /* Space for the icon */
+            box-sizing: border-box;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+        }
+        .form-group input:focus, .form-group select:focus {
+            border-color: #007bff;
+            box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3); /* Glowing effect on focus */
+        }
+        .form-group .icon {
+            position: absolute;
+            left: 10px;
+            top: 70%;
+            transform: translateY(-50%);
+            color: #080808;
+            font-size: 16px;
+        }
+        .form-group .gender-label {
+            display: inline-flex;
+            align-items: center;
+            margin-right: 20px; /* Adjust spacing between options */
+        }
+        .form-group .gender-label input {
+            margin-right: 5px; /* Space between radio button and label text */
+        }
+        .form-group button {
+            background-color: #007BFF;
+            color: #ffffff;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; 
+        }
+        .form-group button:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px); /* Slight lift on hover */
+        }
+        .back-button {
+            display: block;
+            margin-top: 15px;
+            padding: 10px;
+            border: none;
+            background-color: #6c757d;
+            color: #ffffff;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 14px;
+            text-decoration: none;
+        }
+        .back-button:hover {
+            background-color: #5a6268;
+        }
+        .message {
+            display: none;
+            margin-top: 20px;
+            font-size: 16px;
+            color: green;
+            text-align: center;
+        }
+    

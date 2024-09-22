@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://tse3.mm.bing.net/th?id=OIP.6-Z7WuZTVoOiIdKzSMMsWwHaFj&pid=Api&P=0&h=180');
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+body.loaded {
+    opacity: 1;
+}
+.form-container {
+    background-color: #86a773;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Reduced to 500px */
+    transform: scale(0.9);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    position: relative; /* To position the icons */
+}
+.form-container.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+h2 {
+    color: #080808;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+    position: relative; /* For icon positioning */
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #0e0e0e;
+}
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    padding-left: 40px; /* Space for the icon */
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.form-group input:focus, .form-group select:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+}
+.form-group .icon {
+    position: absolute;
+    left: 10px;
+    top: 70%;
+    transform: translateY(-50%);
+    color: #070707;
+    font-size: 16px;
+}
+.form-group input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+}
+.form-group .gender-label {
+    display: inline-block;
+    margin-right: 10px;
+    color: #0a0a0a;
+}
+.form-group button {
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.form-group button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+.back-button {
+    background-color: #6c757d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.back-button:hover {
+    background-color: #5a6268;
+    transform: translateY(-3px);
+}
+/* Success message styling */
+#success-message {
+    display: none;
+    text-align: center;
+    margin-top: 15px;
+    color: rgb(1, 2, 1);
+    font-weight: bold;
+}

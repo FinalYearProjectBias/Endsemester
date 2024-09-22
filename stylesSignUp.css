@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url("bgimg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+
+  /* Navbar styling */
+  .navbar-custom {
+    background-color: #484747;
+  }
+  .navbar-custom .navbar-brand,
+  .navbar-custom .nav-link {
+    color: white; /* Ensure navbar text is white */
+  }
+  .navbar-custom .nav-link:hover {
+    color: #ffcc00; /* Optional: Yellow hover effect for nav links */
+  }
+
+  /* Main container styling */
+  .container {
+    margin-top: 50px;
+  }
+  .signup-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+
+
+  /* Card styling */
+  .card {
+    width: 250px;
+    border: 2px solid white; /* Add white border around the cards */
+    background-color: transparent; /* Make the card background transparent */
+    box-shadow: none; /* Remove box shadow */
+    transition: transform 0.3s ease;
+    border-radius: 8px; /* Optional: Add slight rounding to card edges */
+  }
+
+  .card:hover {
+    transform: translateY(-10px); /* Add hover effect */
+  }
+
+  /* Card body styling */
+  .card-body {
+    background: transparent; /* Ensure the card body is also transparent */
+    border-radius: 5px;
+  }
+
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  /* Button styling */
+  .card a {
+    text-decoration: none;
+    font-weight: bold;
+    color:black; /* Ensure buttons text are visible */
+  }
+  .card a:hover {
+    text-decoration: underline;
+    color: blue; /* Optional: Yellow hover effect for buttons */
+  }
